@@ -75,7 +75,7 @@ time_format: HH:mm:ss
 updated_option: 'mtime'
 
 # Pagination
-per_page: 10
+per_page: 12
 pagination_dir: page
 
 # Include / Exclude file(s)
@@ -137,3 +137,7 @@ music:
   preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: true  # 列表默认折叠    
+
+search:
+  path: search.xml
+  field: post      
