@@ -90,7 +90,7 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/norcx/norcx.github.io.git
-  branch: master
+  branch: main
 
 # Social media integration
 social:
