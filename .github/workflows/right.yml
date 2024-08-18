@@ -1,0 +1,7 @@
+- name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v3
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./public
+    publish_branch: gh-pages  # 确保使用正确的分支名
+    repository: norcx/norcx.github.io  # 明确指定仓库
