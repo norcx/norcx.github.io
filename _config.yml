@@ -90,8 +90,7 @@ theme: hexo-theme-matery
 deploy:
   type: git
   repo: https://github.com/norcx/norcx.github.io.git
-  branch: main
-
+  branch: master
 # Social media integration
 social:
   GitHub: https://github.com/norcx
