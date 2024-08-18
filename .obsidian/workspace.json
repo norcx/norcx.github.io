@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/使用githubPage + hexo + obsidian 管理blog.md",
+                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/使用githubPage + hexo + obsidian 管理blog.md",
+                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/使用githubPage + hexo + obsidian 管理blog.md",
+                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/使用githubPage + hexo + obsidian 管理blog.md"
+                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md"
               }
             }
           }
@@ -148,11 +148,12 @@
   },
   "active": "d93af39f92e4f499",
   "lastOpenFiles": [
-    "source/_obsidian/Post Template.md",
-    "source/_posts/使用githubPage + hexo + obsidian 管理blog.md",
-    "source/_posts/欢迎.md",
     "source/_posts/hello-world.md",
+    "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
     "source/_posts/如何发布文章.md",
+    "source/_posts/使用githubPage + hexo + obsidian 管理blog.md",
+    "source/_obsidian/Post Template.md",
+    "source/_posts/欢迎.md",
     "source/_obsidian",
     "source/_posts/My-New-Post.md",
     "source/categories/index.md",

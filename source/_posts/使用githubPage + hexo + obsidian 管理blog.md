@@ -2,6 +2,7 @@
 title: 使用githubPage + hexo + obsidian 管理blog
 date: 2024--08--17 19:06:08
 tags:
+  - todo
 ---
 # 第一步，配置GitHubPage + hexo，创建博客页面
 
