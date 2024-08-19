@@ -3,6 +3,7 @@ title: ML Lecture 12 Semi-supervised
 date: 2024--08--20 01:01:52
 tags:
   - 炼丹师渡劫飞升攻略
+mathjax: true
 ---
 
 - Supervised learning: $\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R$
