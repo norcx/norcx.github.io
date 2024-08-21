@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
+                "file": "source/_posts/test.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
+                "file": "source/_posts/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
+                "file": "source/_posts/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md"
+                "file": "source/_posts/test.md"
               }
             }
           }
@@ -148,30 +148,45 @@
   },
   "active": "d93af39f92e4f499",
   "lastOpenFiles": [
+    "db.json",
+    "scripts/text-replace.js",
+    "scripts/no_escape.js",
+    "scripts",
+    "node_modules/markdown-it-mark/README.md",
+    "node_modules/markdown-it-mark/CHANGELOG.md",
+    "node_modules/markdown-it-mark/package.json",
+    "node_modules/markdown-it-mark/dist/markdown-it-mark.min.js",
+    "node_modules/markdown-it-mark/dist/markdown-it-mark.js",
+    "node_modules/markdown-it-mark/dist",
+    "node_modules/markdown-it-mark/index.js",
+    "node_modules/markdown-it-mark/LICENSE",
+    "node_modules/hexo-renderer-markdown-it/README.md",
+    "node_modules/markdown-it/README.md",
+    "node_modules/markdown-it/package.json",
+    "node_modules/markdown-it-emoji/README.md",
+    "node_modules/markdown-it-ins/README.md",
+    "node_modules/markdown-it-ins/CHANGELOG.md",
+    "node_modules/markdown-it-deflist/README.md",
+    "node_modules/markdown-it-cjk-breaks/CHANGELOG.md",
+    "node_modules/markdown-it-sup/CHANGELOG.md",
+    "node_modules/markdown-it-sup/README.md",
+    "node_modules/markdown-it/node_modules/entities/readme.md",
+    "node_modules/eastasianwidth/README.md",
+    "node_modules/uc.micro/README.md",
+    "node_modules/uc.micro/CHANGELOG.md",
+    "node_modules/mdurl/README.md",
+    "node_modules/mdurl/CHANGELOG.md",
+    "node_modules/linkify-it/README.md",
+    "node_modules/markdown-it-footnote/README.md",
+    "node_modules/markdown-it-footnote/CHANGELOG.md",
     "source/_posts/hello-world.md",
-    "source/_posts/如何使用Hexo搭建博客并部署在GithubPage上.md",
+    "source/_posts/test.md",
     "source/_posts/如何发布文章.md",
-    "source/_posts/使用githubPage + hexo + obsidian 管理blog.md",
-    "source/_obsidian/Post Template.md",
-    "source/_posts/欢迎.md",
-    "source/_obsidian",
-    "source/_posts/My-New-Post.md",
-    "source/categories/index.md",
-    "source/contact/index.md",
-    "scaffolds/draft.md",
-    "scaffolds/page.md",
-    "scaffolds/post.md",
-    "source/about/index.md",
-    "themes/hexo-theme-matery/README_CN.md",
-    "themes/hexo-theme-matery/README.md",
-    "themes/hexo-theme-matery/CHANGELOG.md",
+    "source/_posts/ML Lecture 12 Semi-supervised.md",
+    "node_modules/mathjax/README.md",
     "themes/hexo-theme-matery/source/favicon.png",
     "themes/hexo-theme-matery/source/medias/cover.jpg",
     "themes/hexo-theme-matery/source/medias/avatar.jpg",
-    "themes/hexo-theme-matery/source/medias/comment_bg.png",
-    "My-New-Post.md",
-    "hello-world.md",
-    "如何发布文章.md",
-    "欢迎.md"
+    "themes/hexo-theme-matery/source/medias/comment_bg.png"
   ]
 }

@@ -132,11 +132,17 @@
     </script>
 
     <% if (theme.mathjax.enable && page.mathjax) { %>
-        <script src="<%- theme.mathjax.cdn %>"></script>
-        <script>
-            MathJax.Hub.Config({
-                tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-            });
-        </script>
-    <% } %>
+    <script  type="text/javascript" id="MathJax-script" async
+      src="<%- theme.mathjax.cdn %>"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <% } %>    
 <% } %>

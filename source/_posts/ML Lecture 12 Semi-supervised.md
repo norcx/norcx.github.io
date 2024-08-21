@@ -6,7 +6,7 @@ tags:
 mathjax: true
 ---
 
-- Supervised learning: $\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R$
+- Supervised learning: \\(\left\\{\left(x^r, \hat{y}^r\right)\right\\}_{r=1}^R\\)
     - E.g. $x^r$ : image, $\hat{y}^r$ : class labels
 - Semi-supervised learning: $\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R,\left\{x^u\right\}_{u=R}^{R+U}$
     - A set of unlabeled data, usually $U \gg R$
@@ -38,11 +38,12 @@ semi-supervised learning包含一些假设，而这些假设是否符合实际�
 
 ### Self Learn
 假设数据直接有明显的分界线。
-- Given: labelled data set $=\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R$, unlabeled data set $=\left\{x^u\right\}_{u=l}^{R+U}$
+- Given: labelled data set $=\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R$,
+- unlabeled data set $=\left\{x^u\right\}_{u=l}^{R+U}$
 - Repeat: 
     - Train model $f^*$ from labelled data set
     - Apply $f^*$ to the unlabeled data set
-        - Obtain $\left\{\left(x^u, y^u\right)\right\}_{u=l}^{R+U}$ Pseudo-label
+        - Obtain $\left\\{\left(x^u, y^u\right)\right\\}_{u=l}^{R+U}$ Pseudo-label
     - Remove ***a set of*** data from unlabeled data set, and add them into unlabeled data set
         - How to choose the data You can also provide a set remains open weight to each data
         - 如何加入data，有一定开放性
