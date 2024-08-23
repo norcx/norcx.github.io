@@ -5,53 +5,76 @@ tags:
   - 炼丹师渡劫飞升指北
 mathjax: true
 ---
+## 引入
 
-- Supervised learning: \\(\left\\{\left(x^r, \hat{y}^r\right)\right\\}_{r=1}^R\\)
+让我们回顾一下监督学习：
+- Supervised learning: $\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R$
     - E.g. $x^r$ : image, $\hat{y}^r$ : class labels
+
+不知道你训练模型的时候，是否遇到这样的困扰：有label的数据集过少，训练的时候，无论怎么训练，训练集准确率90%以上了，测试集准确率却难以进一步提升。无论如何调整模型的结构或参数，模型在测试集上的准确率始终难以提升。
+
+也许，这不是模型的结构或者参数设置的问题。可能只是数据过少的缘故。
+
+一个可能的解决方案是，数据增强。大概率能提升模型的性能，但可能不足以解决数据过少的问题。
+
+> 我们能不能应用没有label的数据，帮助我们改善模型的性能呢？
+
+答案是可以的。
+
+![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200058264.png)
+
+蓝色和橙色，是有label的数据，灰色是没有label的数据。
+
+当你看见这样一幅图的时候，你也可能和笔者一样，有这样的冲动：
+![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200058724.png)
+
+这么划分猫狗分类的边界线，是不是更合理呢？
+
+可以假设，离label标签为猫的数据近的数据，更有可能是猫，同理，离label标注为狗的数据更近的数据，更有可能是狗。
+
+如果假设成立的话，第二幅图的模型，大概能更准确地区分猫和狗之间的差异。
+
+由此可见，如果能把unlabeled data利用起来，有可能改善模型的性能。
+
+## 定义
+
 - Semi-supervised learning: $\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R,\left\{x^u\right\}_{u=R}^{R+U}$
     - A set of unlabeled data, usually $U \gg R$
     - Transductive learning: unlabeled data is the testing data
      - Inductive learning: unlabeled data is not the testing data
 
-> 把没有标签的数据（unlabeled data）也利用起来
-> 利用unlabeled data 的feature 
-> 把unlabeled data放在测试集？
+## Why semi-supervised learning?
 
-- Why semi-supervised learning?
-    - Collecting data is easy, but collecting "labelled" data is expensive
-    - We do semi-supervised learning in our lives
-    - 利用没有标签的数据学习
-    - 与人类认知行为相似，需要学会没有标签的数据
+- Collecting data is easy, but collecting "labelled" data is expensive
+- 与人类的认知行为相似，我们经常猜测unlabeled data的label。
 
 
 
-Why semi-supervised learning helps?
-![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200058264.png)
-灰色的点，是没有标签的数据。这些数据，也包含了一些信息。
-![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200058724.png)
 
-semi-supervised learning包含一些假设，而这些假设是否符合实际就会影响模型的性能
 
-## Semi-supervised Learning for Generative Model
+
+> semi-supervised learning 包含一些假设，而这些假设是否符合实际就会影响模型的性能
+
+
 
 ## Low-density Separation Assumption
 
-### Self Learn
+### 钙版 Self Learn
 假设数据直接有明显的分界线。
 - Given: labelled data set $=\left\{\left(x^r, \hat{y}^r\right)\right\}_{r=1}^R$,
 - unlabeled data set $=\left\{x^u\right\}_{u=l}^{R+U}$
 - Repeat: 
     - Train model $f^*$ from labelled data set
     - Apply $f^*$ to the unlabeled data set
-        - Obtain $\left\\{\left(x^u, y^u\right)\right\\}_{u=l}^{R+U}$ Pseudo-label
-    - Remove ***a set of*** data from unlabeled data set, and add them into unlabeled data set
-        - How to choose the data You can also provide a set remains open weight to each data
-        - 如何加入data，有一定开放性
+        - Obtain $\left\{\left(x^u, y^u\right)\right\}_{u=l}^{R+U}$ Pseudo-label
+    - Remove ***a set of*** data from unlabeled data set, and add them into labeled data set
 
-> 回归不能用这一招。 回归用这个方法，如何Remove ***a set of*** data？没有评价方法。如果是线性回归，也不会改变$f^{*}$
 
-神经网络用Soft label没有用
-![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200058376.png)
+如何加入data，有一定开放性
+
+
+
+
 
 ### 进阶版 Entropy-based Regularization
 
@@ -59,19 +82,25 @@ semi-supervised learning包含一些假设，而这些假设是否符合实际�
 
 ![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200059468.png)
 
+
+$$
+E(y^{u})=-\sum_{m=1}^{n}y_{m}^{u}\ln(y_{m}^{u})
+$$
+$$
+L = \sum_{x^r}C(y^r,\hat{y}^r) + \lambda \sum_{x^u}E(y^u)
+$$
+
+第一部分$\sum_{x^r}C(y^r,\hat{y}^r)$，是有label数据的损失函数
+第二部分$\sum_{x^u}E(y^u)$是没有label数据，预测结果的信息熵。
+这样，有无标注的数据，我们都利用了起来，而且只需要通过梯度下降，我们就能更新模型的参数。
+
+
 >[!question] 为什么这里以损失函数的方式引入熵？
 >损失函数是用于计算参数的梯度，并更新参数的。
 >影响Entropy函数的参数只有模型的参数，这样设计，不要记录unlabeled data的假的的label。***只需要专注于模型参数的更新***。十分巧妙。
 
 
-### Outlook: Semi-supervised SVM
-![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200059724.png)
 
-> find a boundary
-
-> 穷举
-
-> 每次加入一笔data
 ## Smoothness Assumption
 - Assumption: "similar" $x$ has the same $\hat{y}$
 - More precisely:
@@ -86,7 +115,7 @@ $x_{2}$和$x_{3}$比较近，$x_{1}$和$x_{2}$比较远，但因为密度原因�
 ![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200059359.png)
 ![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200059150.png)
 
-## Graph-based approach 
+### Graph-based approach 
 - How to know $x^1$ and $x^2$ are close in a high density region (connected by a high density path)
 
 Represented the data points as a graph
@@ -132,10 +161,5 @@ $L=\sum_{x^r} C\left(y^r, \hat{y}^r\right)+\lambda S$
 ![](https://imgnorcx.oss-cn-shanghai.aliyuncs.com/img/202408200059645.png)
 smooth可以在任何地方
 
-## Better Representation
-Find the latent factors behind the observation
 
-The latent factors (usually simpler)are better representations
-
-找出本质因素
 

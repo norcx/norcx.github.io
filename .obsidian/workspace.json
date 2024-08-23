@@ -13,8 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/test.md",
+                "file": "source/_posts/DeapLearning/ML Lecture 12 Semi-supervised.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
@@ -33,16 +34,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3484c3d8263f4683",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
             "id": "01e5a8ad978696b1",
             "type": "leaf",
             "state": {
@@ -58,14 +49,17 @@
             }
           },
           {
-            "id": "9262dad77180261f",
+            "id": "4ec09ee1a69399df",
             "type": "leaf",
             "state": {
-              "type": "bookmarks",
-              "state": {}
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -80,52 +74,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d50f40691fec2e36",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "source/_posts/test.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "c711ae66a1a3951b",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "source/_posts/test.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "744864de0e1a8fda",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
             "id": "6ff684769a6cea6a",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/test.md"
+                "file": "source/_posts/DeapLearning/ML Lecture 12 Semi-supervised.md"
               }
             }
           }
@@ -133,21 +87,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false
     }
   },
   "active": "d93af39f92e4f499",
   "lastOpenFiles": [
+    "source/_obsidian/Post Template.md",
+    "source/_posts/DeapLearning/ML Lecture 12 Semi-supervised.md",
     "db.json",
     "scripts/text-replace.js",
     "scripts/no_escape.js",
@@ -162,7 +113,6 @@
     "node_modules/markdown-it-mark/LICENSE",
     "node_modules/hexo-renderer-markdown-it/README.md",
     "node_modules/markdown-it/README.md",
-    "node_modules/markdown-it/package.json",
     "node_modules/markdown-it-emoji/README.md",
     "node_modules/markdown-it-ins/README.md",
     "node_modules/markdown-it-ins/CHANGELOG.md",
@@ -183,7 +133,6 @@
     "source/_posts/test.md",
     "source/_posts/如何发布文章.md",
     "source/_posts/ML Lecture 12 Semi-supervised.md",
-    "node_modules/mathjax/README.md",
     "themes/hexo-theme-matery/source/favicon.png",
     "themes/hexo-theme-matery/source/medias/cover.jpg",
     "themes/hexo-theme-matery/source/medias/avatar.jpg",
