@@ -67,7 +67,7 @@ dream:
   enable: true
   showTitle: true
   title: 一切魔鬼通通都会被消灭
-  text: "他没有故作勇敢，也没有怀着虚妄的信念，认为可以‘克服’或者‘战胜’命运。他坦然真诚，对自己本来规划好的未来变得无望，他表示悲痛；但同时又创造了一个新的未来。" 
+  text: #"他没有故作勇敢，也没有怀着虚妄的信念，认为可以‘克服’或者‘战胜’命运。他坦然真诚，对自己本来规划好的未来变得无望，他表示悲痛；但同时又创造了一个新的未来。" 
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -79,7 +79,7 @@ music:
   autoHide: true    # hide automaticaly
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
-  id: 503838841     #require	song id / playlist id / album id / search keyword
+  id: 12330682765   #require	song id / playlist id / album id / search keyword
   fixed: false       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'

@@ -1,5 +1,5 @@
 ---
-title: ML Lecture 12 Semi-supervised
+title: Semi-supervised Learning
 date: 2024--08--20 01:01:52
 tags:
   - 炼丹师渡劫飞升指北
